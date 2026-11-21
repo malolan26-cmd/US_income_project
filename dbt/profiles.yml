@@ -1,0 +1,12 @@
+income_analytics:
+  target: local
+  outputs:
+    local:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: income
+      password: income_local
+      dbname: income
+      schema: analytics
+      threads: 4

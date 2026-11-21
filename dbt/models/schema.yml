@@ -1,0 +1,13 @@
+version: 2
+sources:
+  - name: warehouse
+    schema: public
+    tables:
+      - name: income_metrics
+models:
+  - name: county_income
+    columns:
+      - name: county_year
+        tests: [unique, not_null]
+      - name: fips
+        tests: [not_null]

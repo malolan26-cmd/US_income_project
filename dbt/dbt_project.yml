@@ -1,0 +1,8 @@
+name: income_analytics
+version: '1.0.0'
+config-version: 2
+profile: income_analytics
+model-paths: ['models']
+models:
+  income_analytics:
+    +materialized: view
